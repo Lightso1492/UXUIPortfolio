@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+header li {
+  font-family: "Exo Medium", Arial;
+  display: inline-block;
+  float: right;
+  position: relative;
+  padding: 10px 75px;
+  font-size: 25px;
+  color:#064f5f;
+}
+#wing_Main {
+  margin: 0px 0px;
+  display: grid;
+}
+.wingMainArea {
+  background-position: left;
+  background-repeat: no-repeat;
+  align-items: left;
+  padding-left: 0px;
+  display: flex;
+  position: relative;
+}
+header h1 {
+  font-family: "Exo Light", Arial;
+  font-size: 45px;
+  padding: 0 0 0 250px;
+  margin-bottom: 0px;
+  float:left
+  color: black;
+}
+header p {
+  font-family: "Exo Light", Arial;
+  margin-top: 0px;
+  padding: 0 0 0 250px;
+  float:left;
+  font-size: 20px;
+  color:#F8d782;
+}
+.content {
+  font-family: "Exo Light", Arial;
+  padding: 0 550px;
+  min-width: 400px;
+  background-color: white;
+  color:#064f5f;
+  text-align: center;
+  font-size: 21px;
+}
+.button1 {
+  display: inline-block;
+  padding: 0px 250px 0px;
+  cursor: pointer;
+}
+.button2 {
+  display: inline-block;
+  padding: 0px 0px;
+  cursor: pointer;
+}
+.resume {
+  align-items: center;
+  padding: 20px 575px;
+  margin: 0px;
+  cursor: pointer;
+}
+footer {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  color: #064f5f;
+  text-align: center;
+}
+footer li {
+  font-family: "Exo Medium", Arial;
+  display: inline;
+  padding: 0px 25px;
+  font-size: 10px;
+}
