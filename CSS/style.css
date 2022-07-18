@@ -5,189 +5,235 @@ body {
   font-family: "Exo Light", Arial;
   display: flex;
   flex-direction: row-reverse;
-  float:right;
+  float: right;
+  align-items:center;
   position: relative;
-  align-items: center;
   font-size: 20px;
   color:#064f5f;
   cursor: pointer;
 }
-.navlink {
+.nav-link {
   grid-area: hover;
-  background-color: white;
   width: 128px;
   height: 48px;
+  align-items: center;
   padding-inline: 20px;
   margin-bottom: 0px;
   margin-top: 30px;
   transition: all 0.3s ease;
 }
-/*active state */
-.navlink:hover {
+/*active state*/
+.nav-link:hover {
   font-family: "Exo Medium", Arial;
-  color:#16AE85;
+  color:#16AE85 !important;
 }
+/*visited state*/
+a:visited {
+  display:inline-block;
+  border-bottom: 2px solid #16AE85;
+}
+/*Hamburger nav 
+
+.dropdown-center img.hamnav {
+  display: none;
+  border: 0;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+.dropdown-center:hover img.hamnav {
+  display:none;
+}
+.dropdown-center img.hamnav {
+  display:none;
+}
+.dropdown-center img.hover {
+  display:none;
+}
+/******/
+
 #navbarDropdown {
   align-content: center;
   color: #064f5f;
   background-color: white;
   width: 128px;
   height: 48px;
-  padding-inline: 20px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
   margin-top: 30px;
   transition: all 0.3s ease;
 }
+.dropdown-menu {
+  margin: auto;
+}
 /*active state */
-#navbarDropdown:hover {
+.dropdown-item:hover {
   font-family: "Exo Medium", Arial;
   color:#16AE85;
 }
-.navHome {
+/*Home button*/ 
+.navHome img.home {
+  width: 85%;
+  border: 0;
   padding-left: 30px;
   padding-right: 70px;
   margin: 10px;
   margin-bottom: 0px;
 }
-.navHome .homehover {
-  display: none;
+.navHome:hover img.home {
+  display:none;
 }
-/*active state*/ 
-.navHome:hover .homehover {
-  display: inline-flex;
-  background: url("images/home_button_hover.png") no-repeat;
+.navHome img.hover {
+  display:none;
 }
-/*visited state??? */
-.Selected {
-  display:inline-block;
-  border-bottom: 2px solid #16AE85;
+.navHome:hover img.hover {
+  display:block;
 }
-.WingMain {
-  display: flex;
-  z-index: 0;
-  justify-content: left;
-  
+
+
+/*.Headers {
+  padding-left: 100px;
 }
-.herophoto {
-  width: 100%;
-}
-.containerFluid {
-  display: grid;
-  padding-top: 10x;
-  background-position: left;
-  width: 100%;
-  position: relative;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "wing_MainText1 wing_MainText2"
-  "WingMain";
-}
-.wing_MainText1 {
+h1 {
   font-family: "Exo Light", Arial;
   color:#064f5f;
   font-size: 20px;
   text-align:left;
-  padding-left: 185px;
   margin-bottom: 0px;
   z-index: 1;
 }
-.wing_MainText2 {
+h2 {
   font-family: "Exo Medium", Arial;
-  margin-top: 0px;
-  font-size: 20px;
-  text-align:left;
-  padding-left: 185px;
   color:#F8d782;
+  margin-top: 0px;
+  font-size: 16px;
+  text-align:left;
   z-index: 1;
-}
+}*/
+
 .content {
+  margin: auto;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  font-family: "Exo Light", Arial;
+  color:#064f5f;
+  font-size: 26px;
+}
+p {
   font-family: "Exo Light", Arial;
   min-width: 400px;
-  background-color: white;
   color:#064f5f;
   text-align: center;
-  align-items: center;
+  margin: auto;
+  padding-top: 10px;
   font-size: 21px;
   max-width: 600px;
 }
-#Buttons {
-  display: inline-block;
-  justify-content: center;
+.buttonsTop {
+  display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: .75fr 1fr;
+  column-gap: 0px;
   margin: 0px;
-  
+  padding: 0px;
+  cursor: pointer;
 }
-.button1 {
-  
-}
-.button2 {
-  
-}
-.resume {
-  padding: 20px 0px 0px 0px;
-}
-footer {
-  padding-top: 100px;
-  padding-bottom: 20px;
-  color: #064f5f;
-  text-align: center;
-}
-footer li {
-  font-family: "Exo Medium", Arial;
-  display: inline;
-  padding: 0px 25px;
-  font-size: 10px;
-}
-.preloader{
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: 100000;
-  background-color: white;
-  top:0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.preloader img{
-  animation: myAnimation 3s ease;
-  width: 150px;
+/*UX/UI button*/ 
 
+.button1 img.uxui {
+  padding-right: 0px;
+  height: 61px;
 }
-@keyframes myAnimation {
+.button1:hover img.uxui {
+  display:none;
+}
+.button1 img.hover {
+  display:none;
+}
+.button1:hover img.hover {
+  display:block;
+}
+/****/
+
+/*Beyond button*/ 
+.button2 img.beyond {
+  padding-left: 0px
+}
+.button2:hover img.beyond {
+  display:none;
+}
+.button2 img.hover {
+  display:none;
+}
+.button2:hover img.hover {
+  display:block;
+}
+/****/
+
+.footer {
+  display:flex;
+  flex-direction: column;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Exo Medium", Arial;
+  font-size: 10px;
+  color: #064f5f;
+}
+.Herospace {
+  clear: both;
+  position: relative;
+  align-items: left;
+}
+.herophotoMain {
+  width: 100%;
+}
+.Heroimage img{
+  animation: HeroAnimation 1s forwards;
+  position: relative;
+  width: 100%;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+/* Image Animation slide in? :) */
+@keyframes HeroAnimation {
   0% {
-    transform: rotate(0deg);
-}
-  50% {
-  transform: rotate(360deg);
+    transform: translate(-900px);
 }
   100% {
-    transform: rotate(720deg);
+    transform: translate(0);
 }
 
 }
+
 /* Media Query :) */
 @media only screen and (max-width: 600px) {
   
   .navbar {
-    margin: 0px auto;
-    padding-left: 20px;
+    margin: 0px 20px auto;
     font-size: 15px;
-    align-items: center;
-  }
-  .navlink {
-    padding-inline: 10px;
+    display: inline-flex;
+    float:none;
+    width: 100%;
   }
   .navHome {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0px;
     transform: scale(75%);
   }
   .content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }}
+    transform: scale(55%);
+  }
+  .footer {
+    transform: scale(75%);
+  }
+}
   
