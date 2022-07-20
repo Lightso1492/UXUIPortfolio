@@ -6,41 +6,36 @@
     <title>Homework 20</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="css/Work_style.css" type="text/css" rel="stylesheet">
+    <link href="css/Inquire_style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <!-- Preloader -->
-    <div class="preloader">
-      <img src="images/MonogramLogo 2.svg" alt="preloader animation">
-    </div>
-     <!--****-->
     <nav>
       <div class="navbar">
-        <div class="navHome" href="https://lightso1492.github.io/UXUIPortfolio/">  
+        <a class="navHome" href="https://lightso1492.github.io/UXUIPortfolio/">  
           <img class="home" src="images/home_button.png">
           <img class="home hover" src="images/home_button_hover.png">
-        </div>  
-        <div class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/Inquire.html">
+        </a>
+        <a class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/Inquire.html">
           INQUIRE
-        </div>
-        <div class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/About.html">
+          </a>
+        <a class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/About.html">
           ABOUT
-        </div>
-          <div class="dropdown-center">  
-            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            WORK
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
-            <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Work.html">UX/UI work</a>
-            <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Beyond.html">Beyond</a>
-            </div>
+          </a>
+        <div class="dropdown-center">  
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          WORK
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+          <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Work.html">UX/UI work</a>
+          <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Beyond.html">Beyond</a>
           </div>
+        </div>
       </div>
     </nav>
     <!-- Hero Image -->  
     <section class="Herospace">  
-      <div class="WingWork">
-        <img class="herophotoContact" src="images/WingWork_Inquire.png">
+      <div class="Heroimage">
+        <img class="herophoto" src="images/WingWork_Inquire.png">
       </div>
     </section>
    <!-- --> 
@@ -60,9 +55,10 @@
         </div>
         <img class="Arrow" src="images/arrow1.png">
       </div>
-    </section>
+    
     <!-- Contact Form -->
-    <form class="ContactForm">
+  <div class="ContactForm">
+    <form>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -78,7 +74,13 @@
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-    <!-- -->
+  </div>
+  </section>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="images/MonogramLogo 2.svg" alt="preloader animation">
+    </div>
+     <!--****-->
     <div class="footer">
       <img src="images/MonogramLogo 2.svg">
       All work © LK Mitchell 2022

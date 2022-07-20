@@ -20,6 +20,7 @@ body {
   padding-inline: 20px;
   margin-bottom: 0px;
   margin-top: 30px;
+  color:#064f5f;
   transition: all 0.3s ease;
 }
 /*active state*/
@@ -87,8 +88,6 @@ a:visited {
 .navHome:hover img.hover {
   display:block;
 }
-
-
 /*.Headers {
   padding-left: 100px;
 }
@@ -126,7 +125,7 @@ h3 {
 }
 p {
   font-family: "Exo Light", Arial;
-  min-width: 400px;
+  min-width: 300px;
   color:#064f5f;
   text-align: center;
   margin: auto;
@@ -174,6 +173,306 @@ p {
   display:block;
 }
 /****/
+.Herospace {
+  clear: both;
+  position: relative;
+  align-items: left;
+}
+.herophoto {
+  width: 100%;
+}
+.Heroimage img{
+  position: relative;
+  width: 100%;
+  animation: HeroAnimation 1s forwards;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+/*Work/About/Inquire pages */
+.content h1 {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Exo Light', Arial;
+  font-size: 50px;
+  text-align: center;
+  color: #16AE85;
+}
+.content h2 {
+  margin: 0px;
+  padding-top: 5px;
+  font-family: 'Exo Light', Arial;
+  font-size: 24px;
+  text-align: center;
+  color: #064F5F;
+}
+.Section_Workgroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+/*RockaFairy link*/ 
+.RockaFairyMain img.RockaFairy {
+  
+  cursor: pointer;
+}
+.RockaFairyMain:hover img.RockaFairy {
+  display:none;
+}
+.RockaFairyMain img.hover {
+  display:none;
+}
+.RockaFairyMain:hover img.hover {
+  display:block;
+}
+/****/
+
+.ODFW {
+  margin: 0px auto;
+  
+}
+/*TicTacGo link*/ 
+.TicTacGoMain img.TicTacGo {
+  
+  cursor: pointer;
+}
+.TicTacGoMain:hover img.TicTacGo {
+  display:none;
+}
+.TicTacGoMain img.hover {
+  display:none;
+}
+.TicTacGoMain:hover img.hover {
+  display:block;
+}
+/*About pages*/
+.Section_About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Aboutpreflight {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.About h1 {
+  margin: 0px;
+  float: left;
+  padding-top: 15px;
+  font-family: 'Exo Light', Arial;
+  font-size: 35px;
+  color: #16AE85;
+  text-align: left;
+}
+.paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.arrow {
+  width: 20px;
+}
+p1 {
+  max-width: 700px;
+  padding: 15px;
+}
+.Descriptives {
+  display: inline-block;
+  justify-content: center;
+  font-family: 'Exo Medium', Arial;
+  font-size: 21px;
+  text-align: center;
+  color: #16AE85;
+}
+.Descriptives ul {
+  padding: 0px 10px 0px 10px;
+  list-style-type: none;
+}
+.Descriptives li {
+  padding: 10px;
+}
+/*Resume button*/ 
+.resume img.resumeButton {
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.resume:hover img.resumeButton {
+  display:none;
+}
+.resume img.hover {
+  display:none;
+}
+.resume:hover img.hover {
+  display:block;
+}
+
+/*Inquire pages */
+.ContactForm {
+  justify-content: center;
+  align-items: center;
+  font-family: 'Exo Light', Arial !important;
+  font-size: 24px;
+  text-align: center;
+  margin: 100px;
+}
+.btn-primary {
+  color:#064f5f !important;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  color: #16AE85 !important;;
+}
+/*Casestudy pages*/
+.CasestudyTop {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.CasestudyIntro {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 750px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin: auto;
+}
+.ResearchTitle {
+  grid-area: "ResearchTitle";
+  font-family: 'Exo Medium', Arial;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  font-size: 24px;
+  text-align: left;
+  color: #16AE85;
+  margin: auto;
+}
+.ResearchText {
+  grid-area: "ResearchText";
+  margin: auto;
+  padding-left: 30px;
+}
+.quote {
+  grid-area: "quote";  
+  font-family: 'Exo Medium', Arial;
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: 15px;
+  text-align: left;
+  color: #16AE85;
+  margin: auto;
+}
+.UserPersona {
+  grid-area: "UserPersona";
+  position: relative;
+}
+.CaseStudyPart1 {
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "ResearchTitle"   "UserPersona"
+  "ResearchText" "UserPersona"
+  "quote" ;
+}
+/**Skills section**/
+.SkillsFeather img{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+}
+.SkillsContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: baseline;
+  margin: auto;
+  padding: 20px;
+}
+.SkillsContent h1,h2 {
+  padding-right: 10px;
+  font-family: 'Exo Light', Arial;
+  font-size: 41px;
+  text-align: right;
+  color: #16AE85;
+}
+.SkillsContent li {
+  list-style-type: none;
+  font-family: 'Exo Medium', Arial;
+  font-size: 21px;
+  text-align: left;
+  color: #064F5F;
+}
+.SkillsContent2 {
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr .5fr;
+  align-items: baseline;
+}
+.SkillsContent2 h3,h4 {
+  padding-right: 10px;
+  font-family: 'Exo Light', Arial;
+  font-size: 41px;
+  text-align: right;
+  color: #16AE85;
+}
+.SkillsContent2 li {
+  list-style-type: none;
+  font-family: 'Exo Medium', Arial;
+  font-size: 21px;
+  text-align: left;
+  color: #064F5F;
+}
+/* Tools section */
+.Section_Tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Hdr_Tools {
+  padding-bottom: 30px;
+  font-family: 'Exo Light', Arial;
+  font-size: 40px;
+  color: #064F5F;
+}
+.Tool {
+  font-family: 'Exo Light', Arial;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+.Tool:hover {
+  font-family: 'Exo Light', Arial;
+  color: #064F5F;
+  font-size: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.ToolIcons {
+  display: grid;
+  grid-area: hover;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding-inline: 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  align-items: baseline;
+  justify-content: center;
+  text-align: center;
+}
+/* ---- */
 
 .footer {
   display:flex;
@@ -185,32 +484,46 @@ p {
   font-size: 10px;
   color: #064f5f;
 }
-.Herospace {
-  clear: both;
-  position: relative;
-  align-items: left;
-}
-.herophotoMain {
-  width: 100%;
-}
-.Heroimage img{
-  animation: HeroAnimation 1s forwards;
-  position: relative;
-  width: 100%;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-}
+
 /* Image Animation slide in? :) */
 @keyframes HeroAnimation {
   0% {
-    transform: translate(-900px);
+    transform: translate(-1900px);
 }
   100% {
     transform: translate(0);
 }
+}
+/*--Preloader--*/
+.preloader{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: white;
+  top:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preloader img{
+  animation: myAnimation 3s ease;
+  width: 150px;
 
 }
+@keyframes myAnimation {
+  0% {
+    transform: rotate(0deg);
+}
+  50% {
+  transform: rotate(360deg);
+}
+  100% {
+    transform: rotate(720deg);
+}
+
+}
+/****/
 
 /* Media Query :) */
 @media only screen and (max-width: 600px) {
@@ -222,8 +535,12 @@ p {
     float:none;
     width: 100%;
   }
+  .nav-link {
+    padding-inline: 10px;
+  }
   .navHome {
-    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
     transform: scale(75%);
   }
   .content {
@@ -234,6 +551,107 @@ p {
   }
   .footer {
     transform: scale(75%);
+  }
+  /*Work/About pages */
+  .content h1 {
+    padding: 0px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .preflight {
+    padding-top: 20px;
+    transform: scale(70%);
+  }
+  .titleline {
+    transform: scale(70%);
+  }
+  .Section_Workgroup {
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+  }
+  .resume {
+    transform: scale(70%);
+    align-items: center;
+  }
+  .arrow {
+    transform: scale(70%);
+  }
+  .end {
+    transform: scale(70%);
+  }
+  .AboutText {
+    margin: 0px auto;
+    font-size: 15px;
+  }  
+  .Descriptives {
+    font-size: 15px;
+  }
+  .Descriptives ul {
+    margin: 0px auto;
+  }  
+  .SkillsContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  .SkillsContent h1,h2 {
+    font-size: 25px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .SkillsContent li {
+    font-size: 18px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .SkillsContent2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px auto;
+  }
+  .SkillsContent2 h3,h4 {
+    font-size: 25px;
+    text-align: center;
+    margin: 0px auto;
+  }
+  .Section_Tools {
+    align-items: center;
+  }  
+  .SkillsContent2 li {
+    font-size: 18px;
+    text-align: center;
+    margin: 0px auto;
+  }  
+  .Hdr_Tools {
+  font-size: 25px;
+  }
+  .ToolIcons {
+    display: grid;
+    width: 75%;
+    grid-area: hover;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
   }
 }
   
