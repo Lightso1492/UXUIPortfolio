@@ -130,8 +130,9 @@ p {
   text-align: center;
   margin: auto;
   padding-top: 10px;
-  font-size: 21px;
-  max-width: 600px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  max-width: 700px;
 }
 .buttonsTop {
   display:grid;
@@ -177,9 +178,6 @@ p {
   clear: both;
   position: relative;
   align-items: left;
-}
-.herophoto {
-  width: 100%;
 }
 .Heroimage img{
   position: relative;
@@ -249,25 +247,10 @@ p {
   display:block;
 }
 /*About pages*/
-.Section_About {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 .Aboutpreflight {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.About h1 {
-  margin: 0px;
-  float: left;
-  padding-top: 15px;
-  font-family: 'Exo Light', Arial;
-  font-size: 35px;
-  color: #16AE85;
-  text-align: left;
 }
 .paragraph {
   display: flex;
@@ -276,10 +259,6 @@ p {
 }
 .arrow {
   width: 20px;
-}
-p1 {
-  max-width: 700px;
-  padding: 15px;
 }
 .Descriptives {
   display: inline-block;
@@ -478,6 +457,7 @@ p1 {
   display:flex;
   flex-direction: column;
   padding-top: 100px;
+  padding-bottom: 10px;
   justify-content: center;
   align-items: center;
   font-family: "Exo Medium", Arial;
