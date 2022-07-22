@@ -296,21 +296,37 @@ p {
 }
 
 /*Inquire pages */
+.gmail {
+  transform: scale(80%); 
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.LinkedIn {
+  transform: scale(80%);
+}
 .ContactForm {
   justify-content: center;
   align-items: center;
   font-family: 'Exo Light', Arial !important;
+  color:#064F5F;
   font-size: 24px;
   text-align: center;
-  margin: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+  
 }
 .btn-primary {
-  color:#064f5f !important;
+  color:#f8d782 !important;
+  background-color: #064F5F;
   cursor: pointer;
 }
 .btn-primary:hover {
-  color: #16AE85 !important;;
+  color: white !important;
+  background-color: #16AE85;
 }
+
 /*Casestudy pages*/
 .CasestudyTop {
   position: relative;

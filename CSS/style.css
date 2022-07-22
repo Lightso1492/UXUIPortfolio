@@ -256,6 +256,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px; 
 }
 .arrow {
   width: 20px;
@@ -295,21 +296,37 @@ p {
 }
 
 /*Inquire pages */
+.gmail {
+  transform: scale(80%); 
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.LinkedIn {
+  transform: scale(80%);
+}
 .ContactForm {
   justify-content: center;
   align-items: center;
   font-family: 'Exo Light', Arial !important;
+  color:#064F5F;
   font-size: 24px;
   text-align: center;
-  margin: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+  
 }
 .btn-primary {
-  color:#064f5f !important;
+  color:#f8d782 !important;
+  background-color: #064F5F;
   cursor: pointer;
 }
 .btn-primary:hover {
-  color: #16AE85 !important;;
+  color: white !important;
+  background-color: #16AE85;
 }
+
 /*Casestudy pages*/
 .CasestudyTop {
   position: relative;
@@ -509,25 +526,32 @@ p {
 @media only screen and (max-width: 600px) {
   
   .navbar {
-    margin: 0px 20px auto;
+    margin: 0 auto;
+    padding: 0px;
     font-size: 15px;
     display: inline-flex;
     float:none;
     width: 100%;
   }
   .nav-link {
-    padding-inline: 10px;
-  }
+    align-items: center;
+  } 
   .navHome {
-    padding-left: 20px;
-    padding-right: 20px;
-    transform: scale(75%);
+   transform: scale(75%);
+  }
+  .Heroimage {
+    margin: auto;
+    padding: 0 px;
+  }
+  .Section1 {
+    margin: 0px;
+    padding: 0px;
   }
   .content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: scale(55%);
+    transform: scale(90%);
   }
   .footer {
     transform: scale(75%);
