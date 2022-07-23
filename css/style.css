@@ -120,19 +120,19 @@ h2 {
 
 h3 {
   font-family: "Exo Light", Arial;
-  color:#064f5f;
+  color:#16AE85;
   font-size: 26px;
 }
 p {
   font-family: "Exo Light", Arial;
   min-width: 300px;
   color:#064f5f;
-  text-align: center;
+  text-align: left;
   margin: auto;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 15px;
-  max-width: 700px;
+  max-width: 800px;
 }
 .buttonsTop {
   display:grid;
@@ -321,10 +321,12 @@ p {
   color:#f8d782 !important;
   background-color: #064F5F;
   cursor: pointer;
+  
 }
 .btn-primary:hover {
   color: white !important;
   background-color: #16AE85;
+   
 }
 
 /*Casestudy pages*/
@@ -344,17 +346,13 @@ p {
   margin: auto;
 }
 .ResearchTitle {
-  grid-area: "ResearchTitle";
   font-family: 'Exo Medium', Arial;
   padding-bottom: 20px;
   padding-left: 30px;
-  font-size: 24px;
   text-align: left;
-  color: #16AE85;
   margin: auto;
 }
 .ResearchText {
-  grid-area: "ResearchText";
   margin: auto;
   padding-left: 30px;
 }
@@ -371,15 +369,204 @@ p {
 .UserPersona {
   grid-area: "UserPersona";
   position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.user {
+  max-width: 600px;
+}
+.Stage1 {
+  grid-area: "Stage1";
 }
 .CaseStudyPart1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   display:grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
-  "ResearchTitle"   "UserPersona"
-  "ResearchText" "UserPersona"
-  "quote" ;
+  "Stage1"   "UserPersona";
+}
+.Stage2 {
+  grid-area: "Stage2";
+}
+.DefinitionTitle {
+  grid-area: "DefinitionTitle";
+  font-family: 'Exo Medium', Arial;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  text-align: left;
+  margin: auto;
+}
+.CaseStudyPart2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "Defineparts" "Stage2";
+}
+.Defineparts {
+  grid-area: "Defineparts";
+  position: relative;
+  align-items: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.DefineText {
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.define {
+  max-width: 600px;
+}
+.Stage3Title {
+  font-family: 'Exo Medium', Arial;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  text-align: left;
+  margin: auto;
+}
+.TestingText {
+  margin: auto;
+  padding-left: 30px;
+}
+.Sitemap {
+  grid-area: "Sitemap";
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.map {
+  max-width: 600px;
+}
+.Stage3 {
+  grid-area: "Stage3";
+}
+.CaseStudyPart3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "Stage3"   "Sitemap";
+}
+.Wireframes {
+  position:relative;
+  margin: 0px auto;
+  width: 100%;
+  margin: 20px;
+}
+.Stage4 {
+  grid-area: "Stage4";
+  justify-content: center;
+}
+.IdeationTitle {
+  grid-area: "IdeationTitle";
+  font-family: 'Exo Medium', Arial;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  text-align: left;
+  margin: auto;
+}
+.CaseStudyPart4 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "Ideationparts" "Stage4";
+}
+.Ideationparts {
+  grid-area: "Ideationparts";
+  position: relative;
+  align-items: right;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.IdeationText {
+  margin: auto;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.ideate {
+  max-width: 600px;
+  padding: 20px;
+}
+.EventCards {
+  position:relative;
+  margin: 0px auto;
+  width: 80%;
+  margin: 20px;
+}
+.CaseStudyPart5 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "Stage5"   "Prototype";
+}
+.Stage5 {
+  grid-area: "Stage5";
+  justify-content: center;
+}
+.Stage5Title {
+  grid-area: "Stage5Title";
+  font-family: 'Exo Medium', Arial;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  text-align: left;
+  margin: auto;
+}
+.Prototype {
+  grid-area: "Prototype";
+  position: relative;
+  align-items: left;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.PrototypingText {
+  margin: auto;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+.Mainsample {
+  max-width: 600px;
+  padding: 20px;
+}
+.FinalPrototypes {
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  margin-left: 20px;
+  justify-content: space-around;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+.Finale {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 750px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin: auto;
+}
+.FinalText {
+  margin: 20px;
+}
+.FinalPreview {
+  padding: 30px;
 }
 /**Skills section**/
 .SkillsFeather img{
@@ -469,6 +656,27 @@ p {
   text-align: center;
 }
 /* ---- */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:#16AE85; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer;
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color:#064F5F; 
+  color: #f8d782;
+}
 
 .footer {
   display:flex;
@@ -643,6 +851,12 @@ p {
   }  
   .Hdr_Tools {
   font-size: 25px;
+  }
+  .FinalPrototypes {
+    max-width: 600px;
+  }
+  .FinalPreview {
+    transform: scale(70%);
   }
   .ToolIcons {
     display: grid;
