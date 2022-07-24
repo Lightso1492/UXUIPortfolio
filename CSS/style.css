@@ -206,11 +206,13 @@ p {
 }
 .Section_Workgroup {
   display: flex;
-  flex-direction: row;
+  margin: 30px;
+  position: relative;
   align-items: center;
   justify-content: center;
   justify-content: space-around;
-  padding-top: 15px;
+  padding: 15px;
+  transform: scale(90%);
 }
 /*RockaFairy link*/ 
 .RockaFairyMain img.RockaFairy {
@@ -326,7 +328,10 @@ p {
 .btn-primary:hover {
   color: white !important;
   background-color: #16AE85;
-   
+}
+#LinkedInlink {
+  color:#16AE85;
+  padding-bottom: 20px;
 }
 
 /*Casestudy pages*/
@@ -459,6 +464,7 @@ p {
   margin: 0px auto;
   width: 100%;
   margin: 20px;
+  padding: 20px;
 }
 .Stage4 {
   grid-area: "Stage4";
@@ -482,6 +488,7 @@ p {
   "Ideationparts" "Stage4";
 }
 .Ideationparts {
+  clear: both;
   grid-area: "Ideationparts";
   position: relative;
   align-items: right;
@@ -548,6 +555,7 @@ p {
   position: relative;
   width: 100%;
   margin-left: 20px;
+  margin-bottom: 30px;
   justify-content: space-around;
   justify-content: space-between;
   padding-inline: 20px;
@@ -567,6 +575,18 @@ p {
 }
 .FinalPreview {
   padding: 30px;
+}
+.Figmalink {
+  color:#16AE85 !important;
+  font-family: 'Exo Medium', Arial;
+}
+.Figmalink:hover {
+ color:#064F5F;
+ font-family: 'Exo Medium', Arial;
+}
+#Figma {
+  transform: scale(75%);
+  padding: 10px;
 }
 /**Skills section**/
 .SkillsFeather img{
