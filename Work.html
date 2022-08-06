@@ -9,29 +9,37 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <nav>
-      <div class="navbar">
-        <a class="navHome" href="https://lightso1492.github.io/UXUIPortfolio/">  
-          <img class="home" src="images/home_button.png">
-          <img class="home hover" src="images/home_button_hover.png">
-        </a>
-        <a class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/Inquire.html">
-          INQUIRE
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WORK</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Work.html">UX/UI WORK</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Beyond.html">BEYOND (TBD)</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/About.html">ABOUT<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/Inquire.html">INQUIRE</a>
+          </li>
+          <a class="navHome" href="https://lightso1492.github.io/UXUIPortfolio/">  
+            <img class="home" src="images/home_button.png">
+            <img class="home hover" src="images/home_button_hover.png">
           </a>
-        <a class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/About.html">
-          ABOUT
-          </a>
-        <div class="dropdown-center">  
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          WORK
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
-          <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Work.html">UX/UI work</a>
-          <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Beyond.html">Beyond</a>
-          </div>
-        </div>
+        </ul>
       </div>
     </nav>
+    <!-- End navigation bar -->
     <!-- Hero Image -->  
     <section class="Herospace">  
       <div class="Heroimage">
@@ -50,15 +58,25 @@
     </section>
     <!-- Work  -->
     <section class="Section_Workgroup">
-      <a class="RockaFairyMain" href="https://lightso1492.github.io/UXUIPortfolio/Work_1.html">  
-        <img class="RockaFairy" src="images/Img_RockaFairyDefault.png">
-        <img class="RockaFairy hover" src="images/Img_RockaFairyHover.png">
-      </a>
-       <img class="ODFW" src="images/ODFWcomingsoon.png" alt="default">
-      <a class="TicTacGoMain" href="https://lightso1492.github.io/UXUIPortfolio/Work_3.html">  
-        <img class="TicTacGo" src="images/Img_TicTacGoDefault.png">
-        <img class="TicTacGo hover" src="images/Img_TicTacGoHover.png">
-      </a>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="adventure-item col-lg-4 col-md-12 col-sm-12"> 
+            <div class="adventure-card">
+              <div class="card-items">
+                <a class="RockaFairyMain" href="https://lightso1492.github.io/UXUIPortfolio/Work_1.html">  
+                  <img class="RockaFairy" src="images/Img_RockaFairyDefault.png">
+                  <img class="RockaFairy hover" src="images/Img_RockaFairyHover.png">
+                </a>
+                <img class="ODFW" src="images/ODFWcomingsoon.png" alt="default">
+                <a class="TicTacGoMain" href="https://lightso1492.github.io/UXUIPortfolio/Work_3.html">  
+                  <img class="TicTacGo" src="images/Img_TicTacGoDefault.png">
+                  <img class="TicTacGo hover" src="images/Img_TicTacGoHover.png">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- -->   
     <section class="Section_Skills">

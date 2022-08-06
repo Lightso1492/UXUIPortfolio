@@ -9,29 +9,37 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <nav>
-      <div class="navbar">
-        <a class="navHome" href="https://lightso1492.github.io/UXUIPortfolio/">  
-          <img class="home" src="images/home_button.png">
-          <img class="home hover" src="images/home_button_hover.png">
-        </a>
-        <a class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/Inquire.html">
-          INQUIRE
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WORK</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Work.html">UX/UI WORK</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Beyond.html">BEYOND (TBD)</a>
+              <div class="dropdown-divider"></div>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/About.html">ABOUT<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/Inquire.html">INQUIRE</a>
+          </li>
+          <a class="navHome" href="https://lightso1492.github.io/UXUIPortfolio/">  
+            <img class="home" src="images/home_button.png">
+            <img class="home hover" src="images/home_button_hover.png">
           </a>
-        <a class="nav-link" href="https://lightso1492.github.io/UXUIPortfolio/About.html">
-          ABOUT
-          </a>
-        <div class="dropdown-center">  
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          WORK
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
-          <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Work.html">UX/UI work</a>
-          <a class="dropdown-item" href="https://lightso1492.github.io/UXUIPortfolio/Beyond.html">Beyond</a>
-          </div>
-        </div>
+        </ul>
       </div>
     </nav>
+    <!-- End navigation bar -->
     <!-- Hero Image -->  
     <section class="Herospace">  
       <div class="WingWork Heroimage">
@@ -57,7 +65,8 @@
           <p>RockaFairy is a fairly new public benefit non-profit that provides Southern Oregon free access for needy families to a vast instrument inventory, recording studio, private rehearsal space, and public event venue. Their goal is to grow community outreach by offering music instruction and a check-out process for those needing instruments. My goal was to enhance the user’s experience and enhance KPIs.
           </p>
         </div>
-        <div class="CaseStudyPart1">
+      <div class="container-fluid"> 
+        <div class="CaseStudyPart1 col-lg-6 col-md-6 col-sm-12">
             <div class="Stage1">
                 <div class="ResearchTitle">
                   <h3>User Research</h3>
@@ -74,7 +83,9 @@
               <img class="user" src="images/RockaFairy_UserPersona.png">
             </div>
         </div>
-        <div class="CaseStudyPart2">
+      </div>
+      <div class="container-fluid"> 
+        <div class="CaseStudyPart2 col-lg-6 col-md-6 col-sm-12">
           <div class="Defineparts">
             <img class="define" src="images/RockaFairy_Define.png">
           </div>
@@ -92,7 +103,9 @@
               </div>
           </div>
         </div>
-        <div class="CaseStudyPart3">
+      </div> 
+    <div class="container-fluid">  
+      <div class="CaseStudyPart3 col-lg-6 col-md-6 col-sm-12>">
           <div class="Stage3">
               <div class="Stage3Title">
                 <h3>Testing</h3>
@@ -106,14 +119,16 @@
             <img class="map" src="images/SiteMap.png">
           </div>
       </div>
+    </div>
       <img class="Wireframes" src="images/LOFISKETCHES.png">
-      <div class="CaseStudyPart4">
+    <div class="container-fluid">
+      <div class="CaseStudyPart4 col-lg-6 col-md-6 col-sm-12">
         <div class="Ideationparts">
           <img class="ideate" src="images/STYLEGUIDE.png">
         </div>
         <div class="Stage4">
             <div class="IdeationTitle">
-            <h3>Ideation</h3>
+              <h3>Ideation</h3>
             </div>
             <div class="IdeationText">
               <p>Reorganizing the social media links to a static left-side nav allowed the mobile version to follow the same dropdown functionality. Once I created a monogram and logo for them, some main screen content moved a bit, including attempting an angled Login/signup link, which would become problematic as it turned out.  
@@ -121,10 +136,14 @@
                 <br>When creating the UI Style Guide for this project,  I pulled inspiration from old rock posters and their often muted primary colors. Color accessibilty was fine for some of the color interaction, but there were some issues and feedback was to pull back on the color overall. In the final version, I tried distributing the same palette differently for better accessibility.</br>  
               </p>
             </div>
-            <img class="EventCards" src="images/EVENTSCARDS_RockaFairy.png">
         </div>
       </div>
-      <div class="CaseStudyPart5">
+    </div>
+    <div class="EventCards">
+      <img class="Events" src="images/EVENTSCARDS_RockaFairy.png">
+    </div>
+    <div class="container-fluid">  
+      <div class="CaseStudyPart5 col-lg-6 col-md-6 col-sm-12">
         <div class="Stage5">
             <div class="Stage5Title">
               <h3>Prototyping</h3>
@@ -139,6 +158,7 @@
         <div class="Prototype">
           <img class="Mainsample" src="images/RockaFairy_Desktop_Main_sample 1.png">
         </div>
+      </div>
     </div>
       <div class="FinalPrototypes">
         <img src="images/RockaFairy_Mobile_HI-FI_Main_sample 1.png">
@@ -164,45 +184,37 @@
       </div>
     </section>
   <!-- -->  
-    <section class="Section_Tools">
-      <div class="Hdr_Tools">
-        Tools
+  <section class="Section_Tools">
+    <div class="Hdr_Tools">
+      Tools
+    </div>
+    <div class="ToolIcons">
+      <div class="Tool Figma">
+        <img src="images/1667px-Figma-logo 1.svg" alt="Figma" title="Figma">
       </div>
-      <div class="ToolIcons">
-        <div class="Tool Figma">
-          <img src="images/1667px-Figma-logo 1.svg">
-          Figma
-        </div>
-        <div class="Tool XD">
-          <img src="images/Adobe_XD_CC_icon 1.svg">
-          Adobe XD
-        </div>
-        <div class="Tool Photoshop">
-          <img src="images/Adobe_Photoshop_CC_icon 1.svg">
-          Adobe Photoshop
-        </div>
-        <div class="Tool Illustrator">
-          <img src="images/Adobe_Illustrator_CC_icon 1.svg">
-          Adobe Illustrator
-        </div>
-        <div class="Tool InDesign">
-          <img src="images/Adobe_InDesign_CC_icon 1.svg">
-          Adobe InDesign
-        </div>
-        <div class="Tool InVision">
-          <img src="images/invision 1.svg">
-          InVision
-        </div>
-        <div class="Tool Miro">
-          <img src="images/miro-2 1.svg">
-          Miro
-        </div>
-        <div class="Tool Microsoft_Office">
-          <img src="images/Microsoft_Office_logo_(2019–present) 1.svg">
-          Office
-        </div>
+      <div class="Tool XD">
+        <img src="images/Adobe_XD_CC_icon 1.svg" alt="Adobe XD" title="Adobe XD">
       </div>
-    </section>
+      <div class="Tool Photoshop">
+        <img src="images/Adobe_Photoshop_CC_icon 1.svg" alt="Adobe Photoshop" title="Adobe Photoshop">
+      </div>
+      <div class="Tool Illustrator">
+        <img src="images/Adobe_Illustrator_CC_icon 1.svg" alt="Adobe Illustrator" title="Adobe Illustrator">
+      </div>
+      <div class="Tool InDesign">
+        <img src="images/Adobe_InDesign_CC_icon 1.svg" alt="Adobe InDesign" title="Adobe InDesign">
+      </div>
+      <div class="Tool InVision">
+        <img src="images/invision 1.svg" alt="InVision" title="InVision">
+      </div>
+      <div class="Tool Miro">
+        <img src="images/miro-2 1.svg" alt="Miro" title="Miro">
+      </div>
+      <div class="Tool Microsoft_Office">
+        <img src="images/Microsoft_Office_logo_(2019–present) 1.svg" alt="Microsoft Office" title="Microsoft Office">
+      </div>
+    </div>
+  </section>
     <button onclick="topFunction()" id="myBtn" title="Back to top">Top</button>
     <div class="footer">
       <img src="images/MonogramLogo 2.svg">

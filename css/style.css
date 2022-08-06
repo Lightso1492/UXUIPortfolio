@@ -1,26 +1,46 @@
 body {
   margin: 0;
 }
-.navbar {
-  font-family: "Exo Light", Arial;
-  display: flex;
-  flex-direction: row-reverse;
-  float: right;
-  align-items:center;
-  position: relative;
-  font-size: 20px;
-  color:#064f5f;
-  cursor: pointer;
+.customNav {
+  background-color: white !important;
+ 
+}
+.navbar-nav {
+  margin-left: auto;
+  margin-right: 0 !important;
+}
+.nav-item {
+  margin: 0px 15px;
+}
+
+/* Navigation dropdown menu */
+.dropdown-menu {
+  background-color: white !important;
+  align-content: center;
+  color: #064f5f;
+  width: 90px;
+  height: 48px;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+.dropdown-item {
+  font-family: "Exo Light", Arial !important;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    font-family: "Exo Medium", Arial !important;
+    color:#16AE85 !important;
+    background: white !important;
+}
+.customNav a {
+  color:#064f5f !important;
 }
 .nav-link {
   grid-area: hover;
-  width: 128px;
+  font-family: "Exo Light", Arial;
+  color: #064f5f;
   height: 48px;
   align-items: center;
-  padding-inline: 20px;
-  margin-bottom: 0px;
   margin-top: 30px;
-  color:#064f5f;
   transition: all 0.3s ease;
 }
 /*active state*/
@@ -33,43 +53,6 @@ a:visited {
   display:inline-block;
   border-bottom: 2px solid #16AE85;
 }
-/*Hamburger nav 
-
-.dropdown-center img.hamnav {
-  display: none;
-  border: 0;
-  align-items: center;
-  margin: 10px;
-  margin-bottom: 0px;
-}
-.dropdown-center:hover img.hamnav {
-  display:none;
-}
-.dropdown-center img.hamnav {
-  display:none;
-}
-.dropdown-center img.hover {
-  display:none;
-}
-/******/
-
-#navbarDropdown {
-  align-content: center;
-  color: #064f5f;
-  background-color: white;
-  width: 128px;
-  height: 48px;
-  margin-top: 30px;
-  transition: all 0.3s ease;
-}
-.dropdown-menu {
-  margin: auto;
-}
-/*active state */
-.dropdown-item:hover {
-  font-family: "Exo Medium", Arial;
-  color:#16AE85;
-}
 /*Home button*/ 
 .navHome img.home {
   width: 85%;
@@ -77,7 +60,7 @@ a:visited {
   padding-left: 30px;
   padding-right: 70px;
   margin: 10px;
-  margin-bottom: 0px;
+  margin-top: 20px;
 }
 .navHome:hover img.home {
   display:none;
@@ -88,25 +71,7 @@ a:visited {
 .navHome:hover img.hover {
   display:block;
 }
-/*.Headers {
-  padding-left: 100px;
-}
-h1 {
-  font-family: "Exo Light", Arial;
-  color:#064f5f;
-  font-size: 20px;
-  text-align:left;
-  margin-bottom: 0px;
-  z-index: 1;
-}
-h2 {
-  font-family: "Exo Medium", Arial;
-  color:#F8d782;
-  margin-top: 0px;
-  font-size: 16px;
-  text-align:left;
-  z-index: 1;
-}*/
+
 
 .content {
   margin: auto;
@@ -204,19 +169,23 @@ p {
   text-align: center;
   color: #064F5F;
 }
-.Section_Workgroup {
+/*WorkMain*/
+#adventure .adventure-card {
   display: flex;
   margin: 30px;
   position: relative;
   align-items: center;
   justify-content: center;
-  justify-content: space-around;
   padding: 15px;
   transform: scale(90%);
 }
+.adventure-card .card-items {
+  margin-left:30px;
+  margin-right:30px;
+  color:white;
+}
 /*RockaFairy link*/ 
 .RockaFairyMain img.RockaFairy {
-  
   cursor: pointer;
 }
 .RockaFairyMain:hover img.RockaFairy {
@@ -229,14 +198,11 @@ p {
   display:block;
 }
 /****/
-
 .ODFW {
   margin: 0px auto;
-  
 }
 /*TicTacGo link*/ 
 .TicTacGoMain img.TicTacGo {
-  
   cursor: pointer;
 }
 .TicTacGoMain:hover img.TicTacGo {
@@ -346,8 +312,7 @@ p {
   justify-content: center;
   align-items: center;
   max-width: 750px;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding: 30px;
   margin: auto;
 }
 .ResearchTitle {
@@ -355,10 +320,10 @@ p {
   padding-bottom: 20px;
   padding-left: 30px;
   text-align: left;
-  margin: auto;
+  
 }
 .ResearchText {
-  margin: auto;
+  
   padding-left: 30px;
 }
 .quote {
@@ -369,13 +334,16 @@ p {
   font-size: 15px;
   text-align: left;
   color: #16AE85;
-  margin: auto;
+  
 }
 .UserPersona {
+  width: 90%;
+  display: flex;
   grid-area: "UserPersona";
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
 }
 .user {
   max-width: 600px;
@@ -408,7 +376,7 @@ p {
   margin-bottom: 20px;
   display:grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: 
   "Defineparts" "Stage2";
 }
@@ -416,6 +384,7 @@ p {
   grid-area: "Defineparts";
   position: relative;
   align-items: left;
+  display: flex;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -463,7 +432,7 @@ p {
   position:relative;
   margin: 0px auto;
   width: 100%;
-  margin: 20px;
+  margin: 10px;
   padding: 20px;
 }
 .Stage4 {
@@ -483,7 +452,7 @@ p {
   margin-bottom: 20px;
   display:grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: 
   "Ideationparts" "Stage4";
 }
@@ -508,8 +477,9 @@ p {
 .EventCards {
   position:relative;
   margin: 0px auto;
-  width: 80%;
-  margin: 20px;
+  width: 100%;
+  padding: 20px;
+  width: 75%;
 }
 .CaseStudyPart5 {
   margin-top: 30px;
@@ -544,6 +514,7 @@ p {
   text-align: left;
   padding-left: 30px;
   padding-right: 20px;
+  min-width: 500px;
 }
 .Mainsample {
   max-width: 600px;
@@ -572,6 +543,7 @@ p {
 }
 .FinalText {
   margin: 20px;
+  padding: 20px;
 }
 .FinalPreview {
   padding: 30px;
@@ -726,8 +698,8 @@ p {
 }
 /****/
 
-/* Media Query :) */
-@media only screen and (max-width: 600px) {
+/* Media Query :)*/ 
+@media only screen and (max-width: 600px){
   
   .navbar {
     margin: 0 auto;
@@ -741,7 +713,7 @@ p {
     align-items: center;
   } 
   .navHome {
-   transform: scale(75%);
+   transform: scale(30%);
   }
   .Heroimage {
     margin: auto;
@@ -854,4 +826,5 @@ p {
     justify-content: center;
   }
 }
-  
+
+
