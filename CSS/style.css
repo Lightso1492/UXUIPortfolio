@@ -149,7 +149,7 @@ p {
   width: 100%;
   animation: HeroAnimation 1s forwards;
   animation-duration: 1s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 1.5;
   animation-timing-function: ease-in;
 }
 /*Work/About/Inquire pages */
