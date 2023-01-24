@@ -159,6 +159,7 @@ p {
   animation-duration: 1.75s;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
+  animation-delay: 2s;
 }
 /*Work/About/Inquire pages */
 .content h1 {
@@ -186,6 +187,7 @@ p {
   position:relative;
   align-items: center;
   justify-content: center;
+  
 }
 
 /*RockaFairy link*/ 
@@ -569,6 +571,11 @@ p {
   flex-direction: row;
   position: relative;
   width: 100%;
+  animation: SkillsAnimation 1.75s backwards;
+  animation-duration: 1.75s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-delay: 6s;
 }
 .skillsContent {
   display: grid;
@@ -665,6 +672,15 @@ p {
 @keyframes HeroAnimation {
   0% {
     transform: translate(-1900px);
+}
+  100% {
+    transform: translate(0);
+}
+}
+/* Image Animation slide in#2 */
+@keyframes SkillsAnimation {
+  0% {
+    transform: translate(1900px);
 }
   100% {
     transform: translate(0);
