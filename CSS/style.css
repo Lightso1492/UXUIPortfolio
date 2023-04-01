@@ -29,7 +29,7 @@ body {
   align-content: center;
   color: #064f5f;
   width: 90px;
-  margin-top: 20px;
+  margin-top: 10px;
   transition: all 0.3s ease;
 }
 .dropdown-item {
@@ -51,7 +51,7 @@ body {
   grid-area: hover;
   font-family: "Exo Light", Arial;
   color: #064f5f;
-  height: 48px;
+  height: 30px;
   align-items: center;
   margin-top: 30px;
   transition: all 0.3s ease;
