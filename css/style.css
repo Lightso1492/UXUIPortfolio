@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  background-image: url(../images/Backdrop_Main.png);
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 .navbar-toggler {
   border: 0;
@@ -8,7 +11,7 @@ body {
   color:#16AE85 !important;
 }
 .customNav {
-  background-color: white !important;
+  background-color: 0 !important;
 }
 .navbar-nav {
   margin-left: auto;
