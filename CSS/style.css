@@ -1,9 +1,9 @@
 body {
   margin: 0;
-  background-image: url(../images/WhiteTexturebackground.png);
+  /*background-image: url(../images/Backdrop_Main.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
 .navbar-toggler {
   border: 0;
