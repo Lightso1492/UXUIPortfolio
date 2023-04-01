@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  /*background-image: url(../images/Backdrop_Main.png);
+  /*background-image: url(../images/WhiteTexturebackground.png);
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;*/
@@ -12,7 +13,7 @@ body {
   color:#16AE85 !important;
 }
 .customNav {
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(100, 100, 100, 0.0);
 }
 .navbar-nav {
   margin-left: auto;
