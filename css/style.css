@@ -1,11 +1,4 @@
-/*body {
-  margin: 0;
-  background-image: url(../images/WhiteTexturebackground.png);
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}*/
+
 .navbar-toggler {
   border: 0;
 }
@@ -13,7 +6,7 @@
   color:#16AE85 !important;
 }
 .customNav {
-  background-image: url(../images/WhiteTexturebackground.png);
+  background-color: rgba(255, 255, 255, 0.8)!important;
 }
 .navbar-nav {
   margin-left: auto;
@@ -740,9 +733,7 @@ p {
    transform: scale(10%);
    
   }
-.buttonsTop {
-  transform: scale(50%)
-}
+
   .Heroimage {
     margin: auto;
     padding: 0 px;
@@ -755,7 +746,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: scale(90%);
+    transform: scale(70%);
   }
   .footer {
     transform: scale(75%);
