@@ -18,7 +18,7 @@
 
 /* Navigation dropdown menu */
 .dropdown-menu {
-  background-color: rgba(255, 255, 255, 0.8)!important;
+  background-color: rgba(255, 255, 255, 0.7)!important;
   align-content: center;
   color: #064f5f;
   width: 90px;
@@ -27,7 +27,7 @@
 }
 .dropdown-item {
   font-family: "Exo Light", Arial !important;
-  background-color: rgba(255, 255, 255, 0.8)!important;
+  background-color: rgba(255, 255, 255, 0.6)!important;
 }
 .dropdown-divider {
   color: #064f5f;
@@ -35,7 +35,7 @@
 .dropdown-item:focus, .dropdown-item:hover {
     font-family: "Exo Medium", Arial !important;
     color:#16AE85 !important;
-    background-color: rgba(255, 255, 255, 0.8)!important;
+    background-color: rgba(255, 255, 255, 0.6)!important;
 }
 .customNav a {
   color:#064f5f !important;
@@ -112,6 +112,7 @@ p {
   column-gap: 0px;
   margin: 0px;
   padding: 0px;
+  transform: scale(70%);
   cursor: pointer;
 }
 /*UX/UI button*/ 
