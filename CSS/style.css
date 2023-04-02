@@ -1,11 +1,11 @@
-body {
+/*body {
   margin: 0;
-  /*background-image: url(../images/WhiteTexturebackground.png);
+  background-image: url(../images/WhiteTexturebackground.png);
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;*/
-}
+  background-attachment: fixed;
+}*/
 .navbar-toggler {
   border: 0;
 }
@@ -13,7 +13,7 @@ body {
   color:#16AE85 !important;
 }
 .customNav {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-image: url(../images/WhiteTexturebackground.png);
 }
 .navbar-nav {
   margin-left: auto;
@@ -25,7 +25,7 @@ body {
 
 /* Navigation dropdown menu */
 .dropdown-menu {
-  background-color: rgba(255, 255, 255, 0.6)!important;
+  background-color: rgba(255, 255, 255, 0.8)!important;
   align-content: center;
   color: #064f5f;
   width: 90px;
@@ -34,7 +34,7 @@ body {
 }
 .dropdown-item {
   font-family: "Exo Light", Arial !important;
-  background-color: rgba(255, 255, 255, 0.6)!important;
+  background-color: rgba(255, 255, 255, 0.8)!important;
 }
 .dropdown-divider {
   color: #064f5f;
@@ -42,7 +42,7 @@ body {
 .dropdown-item:focus, .dropdown-item:hover {
     font-family: "Exo Medium", Arial !important;
     color:#16AE85 !important;
-    background-color: rgba(255, 255, 255, 0.6)!important;
+    background-color: rgba(255, 255, 255, 0.8)!important;
 }
 .customNav a {
   color:#064f5f !important;
